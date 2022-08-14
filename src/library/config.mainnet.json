@@ -1,0 +1,10 @@
+{
+    "rpc": "https://tezos-prod.cryptonomic-infra.tech/",
+    "conseilServer": {
+        "url": "https://conseil-prod.cryptonomic-infra.tech:443",
+        "apiKey": "4660121e-1bab-4740-8d57-083681e3441d",
+        "network": "mainnet"
+    },
+    "multisigAddr": "KT1DTxmuuEARtynHP2r6EX14PieaPmTu1vxF",
+    "tokenAddr": "KT1LN4LPSqTMS7Sd2CJw4bbDGRkMv2t68Fy9"
+}

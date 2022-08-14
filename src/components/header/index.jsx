@@ -7,13 +7,13 @@ const Header = () => {
       <div className={classes.container}>
         <h1 className={classes.title}>MultiSig</h1>
         <div className={classes.menu}>
-          <a href="/create" className={classes.menuItem}>
+          <a href="/#/create" className={classes.menuItem}>
             Create
           </a>
-          <a href="/submit" className={classes.menuItem}>
+          <a href="/#/submit" className={classes.menuItem}>
             Submit
           </a>
-          <a href="/execute" className={classes.menuItem}>
+          <a href="/#/execute" className={classes.menuItem}>
             Execute
           </a>
         </div>

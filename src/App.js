@@ -1,4 +1,5 @@
-import { Route, HashRouter, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import "./App.css";
 import Create from "./components/create";
@@ -8,25 +9,17 @@ import Submit from "./components/submit";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="App">
         <Header />
-        <Switch>
-          <Route exact path="/">
-            <Create />
-          </Route>{" "}
-          <Route exact path="/create">
-            <Create />
-          </Route>
-          <Route exact path="/submit">
-            <Submit />
-          </Route>
-          <Route exact path="/execute">
-            <Execute />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/create" element={ <Create /> } />
+          <Route path="/submit" element={ <Submit /> } />
+          <Route path="/execute" element={ <Execute /> } />
+        </Routes>
       </div>
-    </HashRouter>
+      </HashRouter>
+      
   );
 }
 
